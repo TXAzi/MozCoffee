@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MozCoffee</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<i class="fas fa-mug-hot"></i>
+MozCoffee
+</div>
+
+<nav>
+<ul>
+<li><a href="#home">Início</a></li>
+<li><a href="#produtos">Produtos</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#contacto">Contactos</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+O Melhor Café de
+<span>Moçambique</span>
+</h1>
+
+<p>
+Café artesanal premium preparado com os melhores grãos.
+</p>
+
+<a href="#produtos" class="btn">
+Ver Produtos
+</a>
+
+</div>
+
+</section>
+
+<section class="products" id="produtos">
+
+<h2>Nossos Produtos</h2>
+
+<div class="product-grid">
+
+<div class="card">
+<img src="Café Expresso.webp">
+<h3>Café Expresso</h3>
+<p>Intenso e aromático.</p>
+<div class="price">MT 350</div>
+<button onclick="verificarCompra('Café Expresso',350)">
+Comprar
+</button>
+</div>
+
+<div class="card">
+<img src="Cappuccino.webp">
+<h3>Cappuccino</h3>
+<p>Cremoso e delicioso.</p>
+<div class="price">MT 450</div>
+<button onclick="verificarCompra('Cappuccino',450)">
+Comprar
+</button>
+</div>
+
+<div class="card">
+<img src="Café Premium.webp">
+<h3>Café Premium</h3>
+<p>Grãos selecionados.</p>
+<div class="price">MT 550</div>
+<button onclick="verificarCompra('Café Premium',550)">
+Comprar
+</button>
+</div>
+
+<div class="card">
+<img src="Café em Grão.webp">
+<h3>Café em Grão</h3>
+<p>Pacote de 1kg.</p>
+<div class="price">MT 1500</div>
+<button onclick="verificarCompra('Café em Grão',1500)">
+Comprar
+</button>
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="sobre">
+
+<h2>Sobre Nós</h2>
+
+<p>
+A MozCoffee oferece café premium de qualidade superior para todos os amantes do verdadeiro café.
+</p>
+
+</section>
+
+<section class="contact" id="contacto">
+
+<h2>Contactos</h2>
+
+<p>Telefone: +258 871545619</p>
+<p>Email: contacto@mozcoffee.com</p>
+<p>Maputo, Moçambique</p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
