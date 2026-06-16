@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MozCoffee</title>
+<title>MozCoffee PRO</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -19,7 +19,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <div class="logo">
 <i class="fas fa-mug-hot"></i>
-MozCoffee
+MozCoffee PRO
 </div>
 
 <nav>
@@ -33,6 +33,7 @@ MozCoffee
 
 </header>
 
+<!-- HERO -->
 <section class="hero" id="home">
 
 <div class="hero-content">
@@ -43,7 +44,7 @@ O Melhor Café de
 </h1>
 
 <p>
-Café artesanal premium preparado com os melhores grãos.
+Café artesanal premium preparado com grãos selecionados.
 </p>
 
 <a href="#produtos" class="btn">
@@ -54,6 +55,7 @@ Ver Produtos
 
 </section>
 
+<!-- PRODUTOS -->
 <section class="products" id="produtos">
 
 <h2>Nossos Produtos</h2>
@@ -64,56 +66,66 @@ Ver Produtos
 <img src="Café Expresso.webp">
 <h3>Café Expresso</h3>
 <p>Intenso e aromático.</p>
-<div class="price">MT 350</div>
-<button onclick="verificarCompra('Café Expresso',350)">
-Comprar
+<div class="price">MT 120</div>
+
+<button onclick="comprar('Café Expresso',120)">
+Comprar Agora
 </button>
+
 </div>
 
 <div class="card">
 <img src="Cappuccino.webp">
 <h3>Cappuccino</h3>
 <p>Cremoso e delicioso.</p>
-<div class="price">MT 450</div>
-<button onclick="verificarCompra('Cappuccino',450)">
-Comprar
+<div class="price">MT 150</div>
+
+<button onclick="comprar('Cappuccino',150)">
+Comprar Agora
 </button>
+
 </div>
 
 <div class="card">
 <img src="Café Premium.webp">
 <h3>Café Premium</h3>
 <p>Grãos selecionados.</p>
-<div class="price">MT 550</div>
-<button onclick="verificarCompra('Café Premium',550)">
-Comprar
+<div class="price">MT 180</div>
+
+<button onclick="comprar('Café Premium',180)">
+Comprar Agora
 </button>
+
 </div>
 
 <div class="card">
 <img src="Café em Grão.webp">
 <h3>Café em Grão</h3>
 <p>Pacote de 1kg.</p>
-<div class="price">MT 1500</div>
-<button onclick="verificarCompra('Café em Grão',1500)">
-Comprar
+<div class="price">MT 200</div>
+
+<button onclick="comprar('Café em Grão',200)">
+Comprar Agora
 </button>
+
 </div>
 
 </div>
 
 </section>
 
+<!-- SOBRE -->
 <section class="about" id="sobre">
 
 <h2>Sobre Nós</h2>
 
 <p>
-A MozCoffee oferece café premium de qualidade superior para todos os amantes do verdadeiro café.
+A MozCoffee oferece café premium de qualidade superior em Moçambique.
 </p>
 
 </section>
 
+<!-- CONTACTO -->
 <section class="contact" id="contacto">
 
 <h2>Contactos</h2>
@@ -124,7 +136,22 @@ A MozCoffee oferece café premium de qualidade superior para todos os amantes do
 
 </section>
 
-<script src="script.js"></script>
+<!-- SCRIPT WHATSAPP -->
+<script>
+function comprar(produto, preco){
+
+let numero = "258871545619";
+
+let mensagem =
+`Olá, quero comprar:%0AProduto: ${produto}%0APreço: MT ${preco}`;
+
+let url =
+`https://wa.me/${numero}?text=${mensagem}`;
+
+window.open(url, "_blank");
+
+}
+</script>
 
 </body>
 </html>
